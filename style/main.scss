@@ -1,0 +1,553 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+    // list-style: none;
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: 16px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    border-radius: 6em;
+    box-shadow: inset 1px 1px 10px #f3faf7;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #353535;
+}
+
+
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1600px;
+}
+
+.home {
+    min-height: 100vh;
+    background-image: url(../image/tesla.avif);
+    background-position: center;
+    background-size: cover;
+
+    .header {
+        width: 100%;
+        background-color: #fff;
+    }
+
+    .back {
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+
+            img {
+                width: 140px;
+                cursor: pointer;
+            }
+        }
+
+        .nav-center {
+            ul {
+                display: flex;
+                align-items: center;
+                gap: 45px;
+
+                li {
+                    list-style: none;
+
+                    a {
+                        color: #141414;
+                        font-size: 16px;
+                        font-weight: 600;
+                        padding: 8px 7px;
+                        border-radius: 3px;
+                        transition: 0.4s ease;
+                    }
+
+                    a:hover {
+                        background-color: #282828;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        .nav-right {
+            ul {
+                display: flex;
+                gap: 25px;
+
+                li {
+                    list-style: none;
+
+                    a {
+                        color: #141414;
+                        font-size: 16px;
+                        font-weight: 600;
+                        padding: 8px 7px;
+                        border-radius: 3px;
+                        transition: 0.4s ease;
+                    }
+
+                    a:hover {
+                        background-color: #282828;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        .menu-btn {
+            display: none;
+        }
+    }
+
+
+    .home-content {
+        padding: 200px 0 0 0;
+        color: #fff;
+        text-align: center;
+        align-items: center;
+
+        h1 {
+            font-size: 54px;
+            font-weight: 700;
+            padding: 0 0 20px 0;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 500;
+        }
+    }
+}
+
+.car-info {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0 0 0;
+
+    .info {
+        display: flex;
+        gap: 25px;
+        text-align: center;
+        padding: 0 0 20px;
+        font-weight: 600;
+
+        .item1 {
+            p {
+                padding: 5px 0;
+            }
+        }
+
+        .item2 {
+            p {
+                padding: 5px 0;
+            }
+        }
+
+        .item3 {
+            p {
+                padding: 5px 0;
+            }
+        }
+    }
+
+    .btn {
+        justify-content: center;
+        align-items: center;
+
+        button {
+            border: 1px solid #141414;
+            background-color: #141414;
+            color: #fff;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 500;
+            padding: 8px 7px;
+            transition: 0.4s ease;
+        }
+
+        button:hover {
+            background-color: transparent;
+            color: #141414;
+        }
+    }
+
+    .img {
+        img {
+            width: 800px;
+        }
+    }
+}
+
+
+
+
+// теслаааааааааа!!!
+
+.tesla-info {
+    min-height: 100vh;
+    background-color: #0e0e0e;
+    color: #fff;
+
+    .item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 230px 0 0 0;
+
+        .history {
+            p {
+                padding: 0 0 20px;
+
+                span {
+                    font-weight: bold;
+                }
+            }
+
+            button {
+                border: 1px solid #fff;
+                background-color: transparent;
+                color: #fff;
+                cursor: pointer;
+                font-size: 16px;
+                font-weight: 500;
+                padding: 8px 7px;
+                transition: 0.4s ease;
+            }
+
+            button:hover {
+                background-color: #fff;
+                color: #141414;
+            }
+
+        }
+
+        .img-history {
+            img {
+                width: 800px;
+            }
+        }
+    }
+}
+
+
+
+
+// характиристика
+
+.row {
+    // min-height: 100vh;
+    width: 100%;
+
+    .info-row {
+        width: 100%;
+        background-color: #0e0e0e;
+        color: #ffffff;
+        margin: 100px 0;
+        border-radius: 16px;
+
+        .row-page {
+            padding: 40px;
+
+            h1 {
+                padding: 0 0 20px 0;
+            }
+
+            li {
+                padding: 0 0 20px 0;
+            }
+
+            ul {
+                border-bottom: 2px solid #fff;
+            }
+
+            p {
+                padding: 20px 0 0 0;
+            }
+        }
+    }
+}
+
+
+// footer
+
+
+.footer {
+    width: 100%;
+    min-height: 50vh;
+    background-color: #0e0e0e;
+    color: #fff;
+
+    a {
+        color: #fff;
+        text-decoration: underline;
+    }
+
+    .footer-info {
+        padding: 50px 0;
+        display: flex;
+        justify-content: space-between;
+
+        .footer-page {
+            h1 {
+                padding: 0 0 70px;
+                font-size: 45px;
+                font-weight: 700;
+            }
+
+            p {
+                padding: 0 0 20px;
+            }
+        }
+
+        .footer-email {
+
+
+            h1 {
+                padding: 0 0 70px 0;
+            }
+
+            p {
+                padding: 0 0 25px 0;
+            }
+
+            .email {
+                align-items: center;
+                display: flex;
+
+                button {
+                    border: 1px solid #fff;
+                    border-radius: 5px;
+                    // border: none;
+                    background-color: #fff;
+                    color: #000;
+                    cursor: pointer;
+                    font-size: 16px;
+                    font-weight: 500;
+                    padding: 8px 7px;
+                    transition: 0.4s ease;
+                }
+
+                button:hover {
+                    background-color: transparent;
+                    color: #fff;
+                    border: 1px solid #fff;
+                }
+
+
+
+                input {
+                    padding: 9px 7px;
+                    border: 1px solid #fff;
+                    background-color: #0e0e0e;
+                    color: #fff;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+// @media 
+
+@media screen and (max-width: 1317px) {
+    .header {
+        .back {
+            .nav-center {
+                ul {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .car-info {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        min-height: 70vh;
+
+
+        .con {
+            padding: 0 0 50px 0;
+            text-align: center;
+        }
+
+        .img {
+            img {
+                width: 550px;
+            }
+        }
+    }
+
+    .tesla-info {
+        .item {
+            flex-direction: column;
+            padding: 180px 0;
+
+            .history {
+                order: 1;
+
+                p {
+                    width: 100%;
+                }
+            }
+
+            .img-history {
+                img {
+                    width: 530px;
+                }
+            }
+        }
+    }
+
+    .footer {
+        .footer-info {
+            flex-direction: column;
+        }
+    }
+}
+
+@media screen and (max-width: 558px) {
+    .header {
+        .back {
+            .nav-right {
+                ul {
+                    display: none;
+                }
+            }
+
+            .menu-btn {
+                display: flex;
+
+                a {
+                    i {
+                        color: #141414;
+                        font-size: 35px;
+                    }
+                }
+            }
+        }
+    }
+
+    .car-info {
+        padding: 60px 0 0 0;
+        min-height: 50vh;
+
+
+        .info {
+            gap: 15px;
+            font-size: 16px
+        }
+
+        .img {
+            img {
+                width: 420px;
+            }
+        }
+    }
+
+    .tesla-info {
+        .item {
+            .img-history {
+                img {
+                    width: 400px;
+                }
+            }
+        }
+    }
+
+
+
+}
+
+@media screen and (max-width: 455px) {
+    .home {
+        .home-content {
+            h1 {
+                font-size: 45px;
+
+                p {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+
+    .car-info {
+        min-height: 50vh;
+        align-items: center;
+        justify-content: center;
+
+        .info {
+            gap: 14px;
+            font-size: 14px
+        }
+
+        .img {
+            img {
+                width: 350px;
+            }
+        }
+
+        .btn {
+            button {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .tesla-info {
+        .item {
+            .img-history {
+                img {
+                    width: 350px;
+                }
+            }
+        }
+    }
+
+    .footer{
+        .footer-email{
+            .email{
+                .btn{
+                display: flex;
+                gap: 5px;
+
+                button{
+                    font-size: 16px;
+                }
+            }
+            }
+        }
+    }
+
+
+}
